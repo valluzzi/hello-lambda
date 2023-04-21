@@ -1,0 +1,16 @@
+{
+	"command": "safer_rain_script", 
+	"qlr": "True", 
+	"tmax": "24", 
+	"type": "safer_rain_flooding", 
+	"model": "untrim", 
+	"rain": "100", 
+	"dem": "/mnt/efs/projects/valluzzi/folder_1/project_1/dem_20220530153737.bld.tif", 
+	"out": "/mnt/efs/projects/valluzzi/folder_1/project_1/WD_RAIN2413.tif", 
+	"mode": "lambda", 
+	"db": "/mnt/efs/db.sqlite3", 
+	"jtable": "api_job", 
+	"jid": "1655396700038", 
+	"ram": "3072", 
+	"timeout": "180"
+} 
