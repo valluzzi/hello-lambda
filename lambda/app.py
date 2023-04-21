@@ -1,15 +1,17 @@
 
+import json
 
 def main_lambda(event):
     print("main_lambda")
-    return {"status": "ok"}
-
+    #body = event if event else {"status":"No event"}
+    return {
+        "statusCode": 200,
+        "body": "Hello holy world!"
+    }
 
 def handler(event, context):
     """
     AWS Lambda handler
     """
     print(event)
-    res = main_lambda(event)
-    print("===")
-    return res
+    return main_lambda(event)
