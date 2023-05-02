@@ -6,7 +6,7 @@ def main_lambda(event):
     #body = event if event else {"status":"No event"}
     return {
         "statusCode": 200,
-        "body": "Hello holy world!"
+        "body": "Hello World!"
     }
 
 def handler(event, context):
