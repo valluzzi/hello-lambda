@@ -1,4 +1,4 @@
-FROM python:3.10-bullseye
+FROM python:3.11-slim
 
 # Predisposizione per Lambda AWS
 RUN pip install -U awslambdaric
