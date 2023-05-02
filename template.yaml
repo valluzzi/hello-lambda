@@ -9,10 +9,10 @@ Resources:
       Handler: app.handler
       Runtime: python3.7
       Timeout: 30
-      MemorySize: 256
+      MemorySize: 128
       Events:
         MyEvent:
           Type: Api
           Properties:
             Path: /  #/hello
-            Method: get
+            Method: POST
