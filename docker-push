@@ -1,0 +1,12 @@
+!# /bin/bash
+
+#docker login -u valluzzi -p $(cat .dockerhub)
+#docker build --no-cache -t hello-lambda .
+#docker tag hello-lambda docker.io/valluzzi/hello-lambda:latest
+#docker push docker.io/valluzzi/hello-lambda:latest
+
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 901702069075.dkr.ecr.us-east-1.amazonaws.com
+docker build --no-cache -t hello-lambda .
+docker tag hello-lambda:latest 901702069075.dkr.ecr.us-east-1.amazonaws.com/hello-lambda:latest
+docker push 901702069075.dkr.ecr.us-east-1.amazonaws.com/hello-lambda:latest
